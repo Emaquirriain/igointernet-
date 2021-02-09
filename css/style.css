@@ -129,34 +129,92 @@ nav a {
   .logo {
     padding: 0px 330px; } }
 
-/*Servicios Planes Home*/
-.serviciosPlanes {
-  margin: auto;
-  display: block;
-  width: 100%; }
+    /*Planes Home*/
 
-.serviciosPlanes:hover {
-  filter: blur(3px); }
+.pricing-plane-area {
+    background: #f5f9fc;
+}
 
-.grid-servicios {
-  display: grid;
-  grid-template-areas: "serviciosPlanes serviciosPlanes serviciosPlanes" "serviciosMb6 serviciosMb8 serviciosMb10";
-  padding-top: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  grid-column-gap: 10px;
-  justify-content: center; }
+.single-price-plan {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 30px 30px 30px 0;
+    margin-bottom: 30px;
+    background-image: url(../imag/fam.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
 
-.borderGrilla {
-  border: solid 1px #d8d9dd;
-  background-color: #d8d9dd; }
+.single-price-plan .package-plan {
+    padding: 40px 0px 10px 0px;
+    border-radius: 30px 30px 0 0;
+}
+
+.single-price-plan .package-plan > h5 {
+    color: #210063;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.single-price-plan .package-plan .ca-price h4 {
+    color: #fb397d;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.single-price-plan .package-plan .ca-price span {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #fb397d;
+}
+
+.single-price-plan .plan-button > a {
+    background: #210063;
+    padding: 10px 0;
+    border-bottom-right-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single-price-plan .package-description > p {
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    padding: 15px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.single-price-plan .package-description > p:first-child {
+    border-top: 1px solid #ebebeb;
+}
+
+.single-price-plan.active .package-plan,
+.single-price-plan.active .plan-button > a,
+.single-price-plan:hover .plan-button > a {
+    background-color: #5207F2;
+}
+
+.single-price-plan.active .package-plan .ca-price > h4,
+.single-price-plan.active .package-plan .ca-price > span,
+.single-price-plan.active .package-plan > h5,
+.single-price-plan.active .plan-button > a {
+    color: #fff;
+}
 
 /*Beneficios Home*/
 .beneficios {
   background-image: linear-gradient(to right, #210063, #5207F2);
   display: inline-block;
-  width: 100%;
-  margin-top: 30px; }
+  width: 100%; }
 
 .beneficios h1 {
   color: #FFFFFF; }
@@ -281,7 +339,8 @@ nav a {
 
 .gridFormulario {
   display: grid;
-  grid-template-areas: "imageFormulario itemdeFormulario" "imageFormulario camposFormularios";
+  grid-template-areas: "imageFormulario itemdeFormulario"
+ "imageFormulario camposFormularios";
   padding: 20px 0px 40px 0px;
   grid-template-columns: 50% 50%;
   justify-content: center; }
@@ -823,7 +882,9 @@ nav a {
 
 .grid {
   display: grid;
-  grid-template-areas: "coberrural coberurbana" "carac1 carac2" "precios1 precios2";
+  grid-template-areas: "coberrural coberurbana"
+ "carac1 carac2"
+ "precios1 precios2";
   padding: 50px 0px 50px 0px;
   margin-left: 130px;
   margin-right: 130px;
@@ -856,7 +917,7 @@ nav a {
   color: white; }
 
 .accordion {
-  padding: 0px 350px 0px 350px; }
+  padding: 0px 350px 50px 350px; }
 
 .bannerprincipal-ayuda {
   background-image: url("../imag/banner_ayuda.jpg");
@@ -875,12 +936,89 @@ nav a {
   color: white;
   align-content: center; }
 
-/*MAPS*/
-.icons-twitter {
-  background-color: #55acee; }
+ .contact-head {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 2em; }
 
-.icons-facebook {
-  background-color: #3a5795; }
+.contact-info-wrap-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3em; }
+  .contact-info-wrap-flex .con-info {
+    width: 100%;
+    padding: 1.5em;
+    background: whitesmoke;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .contact-info-wrap-flex .con-info {
+        width: 100%;
+        margin: 4px !important; } }
+  .contact-info-wrap-flex p {
+    margin-bottom: 0;
+    color: #000; }
+    .contact-info-wrap-flex p span i {
+      color: #a2dc4d; }
+    .contact-info-wrap-flex p a {
+      color: #000; }
 
-.icons-instagram {
-  background-color: #C25E30; }
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid white;
+  font-size: 16px !important;
+  font-weight: 300;
+  background: whitesmoke;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }
+  .form-control:focus, .form-control:active {
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid white; }
+
+input[type="text"] {
+  height: 50px; }
+
+.form-group {
+  margin-bottom: 30px; }
+  @media screen and (max-width: 768px) {
+    .form-group #fname {
+      margin-bottom: 30px; } }
+  .form-group label {
+    font-weight: 400; }
+
+.colorlib-social-icons {
+  margin: 0;
+  padding: 0; }
+  .colorlib-social-icons li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .colorlib-social-icons li a {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      color: #a2dc4d;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .colorlib-social-icons li a i {
+        font-size: 20px; }
