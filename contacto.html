@@ -10,6 +10,8 @@
    <meta name="description" content="Datos de Contacto">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="icon" href="imag/favicon.png" type="image/png" sizes="45x45" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -74,51 +76,67 @@
 </section>
 
 <section>
-  <form class="row g-3">
-    <div class="col-md-6">
-      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-    </div>
-  
-    <div class="col-md-6">
-      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-    </div>
-  
-    <div class="col-md-6">
-      <input type="email" class="form-control" placeholder="Email" aria-label="Email">
-    </div>
-  
-    <div class="col-md-6">
-      <input type="text" class="form-control" placeholder="Teléfono" aria-label="Telefono">
-    </div>
-  
-    <div class="col-md-6">
-      <input type="text" class="form-control"  id="inputCity" placeholder="Ciudad">
-    </div>
-  
-    <div class="col-md-6">
-      <input type="text" class="form-control" id="inputCity" placeholder="Dirección">
-    </div>
-      
-    <div class="col-md-12">
-      <div class="col-auto">
-        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-          <select class="form-select" id="autoSizingSelect">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+<div id="colorlib-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 animate-box">
+            <h2 class="contact-head"></h2>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="contact-info-wrap-flex">
+                  <div class="con-info">
+                    <p><span><i class="icon-location-2"></i></span> Belgrano 1445, Carcarañá <br> Santa Fe, Argentina</p>
+                  </div>
+                  <div class="con-info">
+                    <p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 54 0341 4940937</a></p>
+                  </div>
+                  <div class="con-info">
+                    <p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">igo@intermedia-bs.com.ar</a></p>
+                  </div>
+                  <div class="con-info">
+                    <p><span><i class="icon-globe"></i></span> <a href="#">www.intermedia-bs.com.ar</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 animate-box">
+            <h2 class="contact-head"></h2>
+            <form action="#">
+              <div class="row form-group">
+                <div class="col-md-6">
+                  <input type="text" id="fname" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" id="lname" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="text" id="email" class="form-control" placeholder="Correo Electrónico">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="text" id="subject" class="form-control" placeholder="Telefóno">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Mensaje"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+              </div>
+            </form>   
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="col-md-12">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-  </form>
 </section>
 
 <section>
@@ -152,7 +170,7 @@
         <h4><strong> Contacto </strong></h4>
         <p> Belgrano 1445 . Carcarañá . Santa Fe . Argentina </p>
         <p style="font-size:20px"> +54 0341 4940937 </p>
-        <p> igo@intermedia-bs.com.ar </p>
+        <p> igo@intermedia-bs.com</p>
       </div>
  
       <div class="footer4">
